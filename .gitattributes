@@ -1,3 +1,4 @@
 ENCSR000EID.chr1.hdf5.gz filter=lfs diff=lfs merge=lfs -text
 ENCSR000EID.chr1.tgz filter=lfs diff=lfs merge=lfs -text
 ENCSR000EID.merged.nodup.fc.signal.bigwig filter=lfs diff=lfs merge=lfs -text
+ENCSR000EID.* filter=lfs diff=lfs merge=lfs -text
