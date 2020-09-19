@@ -3,6 +3,12 @@
 # query_speed_test
 testing querying various backends (i.e. tiledb, hdf5, bigwig) 
 
+## to automatically time the execution of each cell in jupyter notebook: 
+```
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+jupyter nbextension enable execute_time/ExecuteTime
+```
 
 ## Dependencies:
 ```
