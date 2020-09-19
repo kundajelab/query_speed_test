@@ -52,18 +52,22 @@ Author-email: None
 License: BSD
 ```
 ## Download test datasets: untar/unzip:
-### tiledb hg38, chrom 1, ENCSR000EID
+### tiledb hg38, ENCSR000EID
 ```
-wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.chr1.tgz
-tar -xzvf ENCSR000EID.chr1.tgz
+wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.tdb.tgz
+tar -xzvf ENCSR000EID.tdb.tgz
 ```
-### hdf5 hg38, chrom1, ENCSR000EID
+### hdf5 hg38, ENCSR000EID
 ```
-wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.chr1.hdf5.gz
-gzip -d ENCSR000EID.chr1.hdf5.gz
+wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.hdf5
 ```
 ### pyBigWig
 ```
 wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.merged.nodup.fc.signal.bigwig
+```
+
+## numpy array #large file - 24G 
+``` 
+wget http://mitra.stanford.edu/kundaje/annashch/query_speed_test/ENCSR000EID.npy 
 ```
 ## run query_speed_test_LOCAL.ipynb to benchmark tiledb vs hdf5 vs pyBigWig
