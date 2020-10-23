@@ -14,9 +14,9 @@ for index,row in chromsizes.iterrows():
     print("got values for chrom "+str(chrom))
 
 #store to hdf5
-with h5py.File("ENCSR000EID.hdf5",'w') as cur_f:
+with h5py.File("ENCSR000EID.compressed.hdf5",'w') as cur_f:
     for chrom in chrom_dict:
-        cur_f.create_dataset(chrom,data=chrom_dict[chrom],dtype='f')
+        cur_f.create_dataset(chrom,data=chrom_dict[chrom],dtype='f',compression="gzip")
         print('wrote:'+chrom)
     
         
